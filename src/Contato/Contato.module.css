@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animeLeft .5s forwards;
 }
 
 .container img{
@@ -11,4 +14,11 @@
 .container .contact {
   margin-left: 30px;
   width: 70%;
+}
+
+@keyframes animeLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
 }

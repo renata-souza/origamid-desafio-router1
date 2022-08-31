@@ -6,6 +6,9 @@
 
 .container img{
   border-radius: 5px;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animeLeft .5s forwards;
 }
 
 .container .productInfo {
@@ -19,4 +22,11 @@
   font-weight: 500;
   padding: 5px 15px;
   border-radius: 5px;
+}
+
+@keyframes animeLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
 }

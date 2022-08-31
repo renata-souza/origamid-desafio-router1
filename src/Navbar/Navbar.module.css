@@ -11,3 +11,8 @@
   font-weight: 600;
   color: black;
 }
+
+.navbar :global(.active),
+a:hover {
+  background-color: rgb(139, 217, 242);
+}
