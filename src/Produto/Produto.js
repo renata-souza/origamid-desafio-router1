@@ -4,18 +4,17 @@ import { useParams } from 'react-router-dom'
 import style from './Produto.module.css'
 
 const Produto = () => {
-  const params = useParams()
+  const { id } = useParams()
   const [ produto, setProduto ] = useState()
-  console.log(produto)
 
   useEffect(() => {
     async function fetchProduto() {
-      const resposta = await fetch(`https://ranekapi.origamid.dev/json/api/produto/${params.id}`)
+      const resposta = await fetch(`https://ranekapi.origamid.dev/json/api/produto/${id}`)
       const produto = await resposta.json()
       setProduto(produto)
     }
     fetchProduto()
-  }, [])
+  }, [id])
 
   return (
     <div className={style.container}>
