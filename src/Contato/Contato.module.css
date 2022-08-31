@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.container img{
+  border-radius: 5px;
+}
+
+.container .contact {
+  margin-left: 30px;
+  width: 70%;
+}
